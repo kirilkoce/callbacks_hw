@@ -9,14 +9,14 @@ function getPosts() {
         output += `<li>${post.body}</li>`;
     });
     document.body.innerHTML = output;
-    },2000);
+    },1000);
 }
 
-function cretePost(post, callback) {
+function createPost(post, callback) {
     setTimeout(()=>{
         posts.push(post);
         callback();
-    },4000);
+    },3000);
     }
 
 
